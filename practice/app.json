@@ -5,11 +5,43 @@
     "pages/detail/detail",
     "pages/order/order"
   ],
+  "entryPagePath": "pages/index/index",
   "window": {
-    "navigationBarTextStyle": "black",
+    "navigationBarTextStyle": "white",
     "navigationBarTitleText": "Juwenzhang",
     "navigationBarBackgroundColor": "#00f"
   },
+  "networkTimeout": {
+    "request": 2000,
+    "connectSocket": 2000,
+    "uploadFile": 2000,
+    "downloadFile": 2000
+  },
+  "tabBar": {
+    "backgroundColor": "#ce9083",
+    "borderStyle": "black",
+    "color": "#000000",
+    "selectedColor": "#ff0000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "index"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "logs"
+      },
+      {
+        "pagePath": "pages/detail/detail",
+        "text": "detail"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "order"
+      }
+    ]
+  },
+  "debug": true,
   "style": "v2",
   "componentFramework": "glass-easel",
   "sitemapLocation": "sitemap.json",

@@ -17,6 +17,11 @@ Page({
       url: '../logs/logs'
     })
   },
+  onLoad(options) {
+    wx.setNavigationBarTitle({
+      title: '首页',
+    })
+  },
   onChooseAvatar(e) {
     const { avatarUrl } = e.detail
     const { nickName } = this.data.userInfo
