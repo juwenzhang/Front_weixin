@@ -1,0 +1,21 @@
+<!-- 开始实现书写我们的第一个视图盒子 -->
+<view class="demo">{{ message }}</view>
+
+<!-- <view id="id_{{id}}"></view> -->
+
+<view>{{is_login? "成功登录" : "用户未登录"}}</view>
+
+<!-- 开始我们的列表渲染的使用 -->
+<view>
+  <view wx:for="{{objectArray}}" wx:key="*this">
+    {{item.unique}}
+  </view>
+</view>
+
+<!-- 或者说直接使用我们的其他语法也行 -->
+<view>
+  <view wx:for="{{objectArray}}" wx:for-item="unique" wx:for-index="position"
+  wx:key="*this">
+  {{ unique.unique}} - {{ position }}
+  </view>
+</view>

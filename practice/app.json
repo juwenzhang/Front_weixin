@@ -3,9 +3,10 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/detail/detail",
-    "pages/order/order"
+    "pages/order/order",
+    "pages/weixin_demo/weixin_demo"
   ],
-  "entryPagePath": "pages/index/index",
+  "entryPagePath": "pages/weixin_demo/weixin_demo",
   "window": {
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "Juwenzhang",
